@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Website </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	body{
+		margin:0;
+		padding:0;
+		background-image: url('star_background.jpg')
+	}
+	
+	nav {
+		position: static;
+		background: #ECDDD9;
+		overflow: auto;
+		margin: 7px;
+		border-style: dotted;
+		border-width: medium;
+	}
+	ul {
+		padding: 0;
+		margin: 0 0 0 150px;
+		list-style: none;
+	}
+	li{
+		float: left;
+	}
+	.logo img{
+		position: absolute;
+		margin-top: 2px;
+		margin-left: 10px;
+	}
+	.insta img{
+		float: right;
+	}
+	.youtube img{
+		float: right;
+	}
+	nav a{
+		width: 100px;
+		display: block;
+		padding: 35px 14px;
+		text-decoration: none;
+		font-size:15px;
+		font-family: monospace;
+		color: black;
+		text-allign: center;
+		transition: 0.5s;
+	}
+	nav a:hover:not(.active) {
+		background-color: #E3D7D3;
+		width: 150px;
+	}
+	.active {
+		background-color: #CE97AA; 		
+	}
+	.footer {
+		padding: 20px;
+		text-align: center;
+		background: #CE97AA;
+		margin-top: 20px;
+		font-family: monospace;
+	}
+	h1{
+		text-align:center;
+		font-size:30px;
+		border-style: solid dashed dotted double; 
+		padding:20px;
+	}
+	.tab {
+		border-radius: 5px;
+		background-color: #ECDDD9;
+		padding: 20px;
+		margin-left: 400px;
+		margin-right: 400px;
+		margin-top: 30px;
+		font-family: Franklin Gothic Medium;
+		border-style: dashed dotted;
+	}
+	
+	@media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+	width: 100%;
+	}
+	
+</style>
+</head>
+
+<body>
+
+<div class="logo"><a href="index.htm"><img src="logo.png" alt="my logo" width="150" height="85"></a>
+</div>
+<div class="insta"><a href="https://www.instagram.com/" target= "_blank"><img src="insta-logo.png" alt="instagram" width="70" height="70"></a>
+</div>
+<div class="youtube"><a href="https://www.youtube.com/" target="_blank"><img src="utube-logo.png" alt="youtube-logo" width="70" height="70"></a>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="index.htm">Biography</a></li>
+		<li><a href="resume.htm">Resume</a></li>
+		<li><a href="timetable.htm">Timetable</a></li>
+		<li><a href="galleries.htm">Galleries</a></li>
+		<li><a href="downloads.htm">Download</a></li>
+		<li><a class="active" href="links.htm">links</a></li>
+		<li><a href="log.htm">LogIn</a></li>
+		<li style="float: right;"><a href="logout.htm">LogOut</a><li>
+		
+	</ul>
+</nav>
+<div class="tab">
+	<h1>Links</h1>
+	<br>
+	<h3>More Information here:</h3>
+	<p>U-Future: <a href="https://ufuture.uitm.edu.my/home/" target="_blank">https://ufuture.uitm.edu.my/home/</a></p>
+	<p>I-Student Portal: <a href="https://istudent.uitm.edu.my/index_isp.htm" target="_blank">https://istudent.uitm.edu.my/index_isp.htm</a></p>
+	<p>Maple Mobius: <a href="https://uitm.mobius.cloud/login" target="_blank">https://uitm.mobius.cloud/login</a></p>
+	<p>UiTM Official website: <a href="https://uitm.edu.my/index.php/en/" target="_blank">https://uitm.edu.my/index.php/en/</a></p>
+	<p>FSKM official website: <a href="https://fskm.uitm.edu.my/v5/index.php/en/" target="_blank">https://fskm.uitm.edu.my/v5/index.php/en/</a></p>
+	<hr style="height: 2px; color: black; background-color:black;">
+	<h3>Other Social Media:</h3>
+	<p>UiTM Instagram: <a href="https://www.instagram.com/uitm.official/?hl=en" target="_blank">https://www.instagram.com/uitm.official/?hl=en</a></p>
+	<p>FSKM Instagram: <a href="https://www.instagram.com/smffskm/" target="_blank">https://www.instagram.com/smffskm/</a></p>
+	<br><br>
+	
+</div>
+	<div class="footer">
+		<small>&copy; copyright 2023; Ddori's</small>
+	</div>
+
+</body>
+</html>

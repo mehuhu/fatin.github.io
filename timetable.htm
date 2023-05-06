@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Website </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	body{
+		margin:0;
+		padding:0;
+		background-image: url('star_background.jpg')
+	}
+	
+	nav {
+		position: static;
+		background: #ECDDD9;
+		overflow: auto;
+		margin: 7px;
+		border-style: dotted;
+		border-width: medium;
+	}
+	ul {
+		padding: 0;
+		margin: 0 0 0 150px;
+		list-style: none;
+	}
+	li.a{
+		float: left;
+	}
+	.logo img{
+		position: absolute;
+		margin-top: 2px;
+		margin-left: 10px;
+	}
+	.insta img{
+		float: right;
+	}
+	.youtube img{
+		float: right;
+	}
+	nav a{
+		width: 100px;
+		display: block;
+		padding: 35px 14px;
+		text-decoration: none;
+		font-size:15px;
+		font-family: monospace;
+		color: black;
+		text-allign: center;
+		transition: 0.5s;
+	}
+	nav a:hover:not(.active) {
+		background-color: #E3D7D3;
+		width: 150px;
+	}
+	.active {
+		background-color: #CE97AA; 		
+	}
+	.footer {
+		padding: 20px;
+		text-align: center;
+		background: #CE97AA;
+		margin-top: 20px;
+		font-family: monospace;
+	}
+	table.b, th.b, td.b{
+		border: 2px double;
+		border-radius:3px;
+	}
+	h1{
+		text-align:center;
+		font-size:30px;
+		border-style: solid dashed dotted double; 
+		padding:20px;
+	}
+	.tab {
+		border-radius: 5px;
+		background-color: #ECDDD9;
+		padding: 20px;
+		margin-left: 250px;
+		margin-right: 250px;
+		margin-top: 30px;
+		font-family: Franklin Gothic Medium;
+	}
+	th{
+		font-size:20px;
+	}
+	td{
+		text-align: center;
+		padding: 2px;
+	}
+	table a{
+		color: black;
+		text-decoration: none;
+	}
+	table a:hover:not(.active) {
+		background-color: #CE97AA;
+		border-radius: 5px;
+		padding:7px
+	}
+	table.e{
+		border-style: dashed;
+		border-width: 5px;
+		width:100%
+	} 
+	
+	th.e, td.e{
+		text-align: left; 
+		margin:0px;
+	}
+	media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+	width: 100%;
+	}
+	
+</style>
+</head>
+
+<body>
+
+<div class="logo"><a href="index.htm"><img src="logo.png" alt="my logo" width="150" height="85"></a>
+</div>
+<div class="insta"><a href="https://www.instagram.com/" target= "_blank"><img src="insta-logo.png" alt="instagram" width="70" height="70"></a>
+</div>
+<div class="youtube"><a href="https://www.youtube.com/" target="_blank"><img src="utube-logo.png" alt="youtube-logo" width="70" height="70"></a>
+</div>
+
+<nav>
+	<ul>
+		<li class="a" ><a href="index.htm">Biography</a></li>
+		<li class="a" ><a href="resume.htm">Resume</a></li>
+		<li class="a" ><a class="active" href="timetable.htm">Timetable</a></li>
+		<li class="a" ><a href="galleries.htm">Galleries</a></li>
+		<li class="a" ><a href="downloads.htm">Download</a></li>
+		<li class="a" ><a href="links.htm">links</a></li>
+		<li class="a" ><a href="log.htm">LogIn</a></li>
+		<li class="a"  style="float: right;"><a href="logout.htm">LogOut</a><li>
+		
+	</ul>
+</nav>
+<div class="tab">
+	<h1>CS2512A TIME TABLE</h1>
+	<table class="b" width="100%">
+		<tr>
+			<th class="b">Time</th>
+			<th class="b">Monday</th>
+			<th class="b">Tuesday</th>
+			<th class="b">Wednesday</th>
+			<th class="b">Thursday</th>
+			<th class="b">Friday</th>
+		</tr>
+		<tr>
+			<td class="b">0800-0900</td>
+			<td class="b" rowspan="2"> </td>
+			<td class="b" rowspan="2"><a href="#CSC574">CSC574</td></a>
+			<td class="b" rowspan="2"><a href="#CSC574">CSC574</td>
+			<td class="b" rowspan="2"><a href="#MAT421">MAT421</td>
+			<td class="b" rowspan="2"><a href="#CSC404">CSC404</td>
+		</tr>
+		<tr>
+			<td class="b"0900-1000</td>
+
+		</tr>
+		<tr>
+			<td class="b">1000-1100</td>
+			<td class="b" rowspan="2"><a href="#ICT450">ICT-450</td></a>
+			<td class="b" rowspan="2"><a href="#CSC520">CSC520</td>
+			<td class="b" rowspan="2"><a href="#CSC404">CSC404</td>
+			<td class="b" rowspan="2"></td>
+			<td class="b" rowspan="2"><a href="#STA416">STA416</td>
+		</tr>
+		<tr>
+			<td class="b">1100-1200</td>
+		</tr>
+		<tr>
+			<td class="b">1200-1300</td>
+			<td class="b" rowspan="4"></td>
+			<td class="b" rowspan="4"></td>
+			<td class="b" rowspan="2"></td>
+			<td class="b" rowspan="2"></td>
+			<td class="b" rowspan="6"></td>
+		</tr>
+		<tr>
+			<td class="b">1300-1400</td>
+		</tr>
+		<tr>
+			<td class="b">1400-1500</td>
+			<td class="b" rowspan="2"><a href="#CSC520">CSC520</td>
+			<td class="b" rowspan="2"><a href="#STA416">STA416</td>
+		</tr>
+		<tr>
+			<td class="b">1500-1600</td>
+		</tr>
+		<tr>
+			<td class="b">1600-1700</td>
+			<td class="b" rowspan="2"><a href="#MAT421">MAT421</td>
+			<td class="b" rowspan="2"><a href="#ICT450">ICT-450</td>
+			<td class="b" rowspan="2"></td>
+			<td class="b" rowspan="2"></td>
+		</tr>
+		<tr>
+			<td class="b">1700-1800</td>
+		</tr>
+	</table>
+	
+	<h2> C O U R S E - L I S T</h2>
+	<h3 id="CSC574">"CSC574"</h3>
+		<table class="e">
+			<tr> 
+				<td rowspan="4"><img src="csc574.png" style="border-radius:5px" width="120px"></td>
+			</tr>
+			<tr>
+				<td class="e";>DYNAMIC WEB APPLICATION DEVELOPMENT<br>
+				LECTURER: NUR AINA KHADIJAH BINTI ADNAN</td>
+			</tr>
+		</table>
+	<h3 id="CSC404">"CSC404"</h3>
+		<table class="e">
+			<tr> 
+				<td rowspan="4"><img src="csc404.png" style="border-radius:5px" width="120px"></td>
+			</tr>
+			<tr>
+				<td class="e";>PROGRAMMING II<br>
+				LECTURER: DR. SHAKIRAH BINTI HASHIM</td>
+			</tr>
+		</table>
+	<h3 id="CSC520">"CSC520"</h3>
+		<table class="e">
+			<tr> 
+				<td rowspan="4"><img src="csc520.png" style="border-radius:5px" width="120px"></td>
+			</tr>
+			<tr>
+				<td class="e;">PRINCIPLES OF OPERATING SYSTEMS<br>
+				LECTURER: PROFESOR MADYA DR NORHASLINDA BINTI KAMARUDDIN</td>
+			</tr>
+		</table>
+	<h3 id="MAT421">"MAT421"</h3>
+		<table class="e">
+			<tr> 
+				<td rowspan="4"><img src="mat421.png" style="border-radius:5px" width="120px"></td>
+			</tr>
+			<tr>
+				<td class="e;">CALCULUS I<br>
+				LECTURER: DR NURUL SYAZA BINTI ABDUL LATIF</td>
+			</tr>
+		</table>
+	<h3 id="STA416">"STA416"</h3>
+		<table class="e">
+			<tr> 
+				<td rowspan="4"><img src="sta416.png" style="border-radius:5px" width="120px"></td>
+			</tr>
+			<tr>
+				<td class="e;">APPLIED PROBABILITY AND STATISTIC<br>
+				LECTURER: DR. NOOR FADHILAH BINTI AHMAD RADI</td>
+			</tr>
+		</table>
+	<h3 id="ICT450">"ICT450"</h3>
+		<table class="e">
+			<tr> 
+				<td rowspan="4"><img src="ict450.png" style="border-radius:5px" width="120px"></td>
+			</tr>
+			<tr>
+				<td class="e;">DATABAS DESIGN AND DEVELOPMENT<br>
+				LECTURER: DR ROZIANAWATY BINTI OSMAN</td>
+			</tr>
+		</table>
+</div>
+
+<div class="footer">
+	<small>&copy; copyright 2023; Ddori's</small>
+</div>
+
+</body>
+</html>

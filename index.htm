@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Website </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		margin:0;
+		background-image: url('star_background.jpg')
+	}
+	
+	nav {
+		position: static;
+		background: #ECDDD9;
+		overflow: auto;
+		margin: 7px;
+		border-style: dotted;
+		border-width: medium;
+	}
+	ul {
+		padding: 0;
+		margin: 0 0 0 150px;
+		list-style: none;
+	}
+	li{
+		float: left;
+	}
+	.logo img{
+		position: absolute;
+		margin-top: 2px;
+		margin-left: 10px;
+	}
+	.insta img{
+		float: right;
+	}
+	.youtube img{
+		float: right;
+	}
+	nav a{
+		width: 100px;
+		display: block;
+		padding: 35px 14px;
+		text-decoration: none;
+		font-size:15px;
+		font-family: monospace;
+		color: black;
+		text-allign: center;
+		transition: 0.5s;
+	}
+	nav a:hover:not(.active) {
+		background-color: #E3D7D3;
+		width: 150px;
+	}
+	.active {
+		background-color: #CE97AA; 		
+	}
+	.column{
+		float: left;
+		padding: 10px;
+		background-color: #ECDDD9 ;
+		border-color: #CE97AA;
+		border-width: 5px;
+		border-style: dashed dotted dashed dotted;
+		margin: 7px;
+	}
+	.column.side{
+		width: 19%;
+	}
+	.column.middle{
+		width: 58%;
+	}
+	.row::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.column a{
+		color: black;
+	}
+	.footer {
+		padding: 20px;
+		text-align: center;
+		background: #CE97AA;
+		margin-top: 20px;
+		font-family: monospace;
+	}	
+	table{
+		border-radius: 5px;
+		background-color: #CE97AA;
+		padding: 20px;
+		font-family: Franklin Gothic Medium;
+	}
+	@media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+	width: 100%;
+	}
+	
+	
+</style>
+</head>
+
+<body>
+
+<div class="logo"><a href="index.htm"><img src="logo.png" alt="my logo" width="150" height="85"></a>
+</div>
+<div class="insta"><a href="https://www.instagram.com/" target= "_blank"><img src="insta-logo.png" alt="instagram" width="70" height="70"></a>
+</div>
+<div class="youtube"><a href="https://www.youtube.com/" target="_blank"><img src="utube-logo.png" alt="youtube-logo" width="70" height="70"></a>
+</div>
+
+<nav>
+	<ul>
+		<li><a class="active" href="#biography">Biography</a></li>
+		<li><a href="resume.htm">Resume</a></li>
+		<li><a href="timetable.htm">Timetable</a></li>
+		<li><a href="galleries.htm">Galleries</a></li>
+		<li><a href="downloads.htm">Download</a></li>
+		<li><a href="links.htm">links</a></li>
+		<li><a href="log.htm">LogIn</a></li>
+		<li style="float: right;"><a href="logout.htm">LogOut</a><li>
+		
+	</ul>
+</nav>
+
+<div class="row">
+  <div class="column side">
+    <img src="cat-dancing.GIF" alt="funny looking cat" width="80%">
+	<img src="cat-dancing.GIF" alt="funny looking cat" width="80%">
+    
+  </div>
+  
+  <div class="column middle">
+    <h1 id="biography" style="font-family: Franklin Gothic Medium;">Hello there :D!</h1>
+    <h2> About me..</h2>
+	<hr style="height: 2px; color: black; background-color:black;"><br>
+	<p style="font-size:20px; margin:10px; font-family: monospace; color:#2F2D2D;"> The name is Fatin Fairul, who is a full-time student at MARA University of Technology in 
+	Shah Alam, taking the Barchelor Degree in Computer Science (Netcentric Computing). Have skills in multiple different 
+	programming languages. Specialising in web development, such as HTML, Javascript, and CSS, Fatin wanted to use it to help students 
+	study easily using websites. She wants to make students more comfortable using the website, as all the information is in one place. Start in high school and go on to a degree programme.
+	<br><br>She received multiple certificates, such as "best website for students, most flexible website," etc. When she was not at 
+	her working table, she mostly spent her time drawing or just breathing in the fresh air outside. 
+	<br><br><hr style="height: 2px; color: black; background-color:black;"><br>
+	<audio controls autoplay>
+		<source src="mario1.mp3" type="audio/mpeg">
+	</audio>
+ 	
+	
+	
+	
+	 
+  </div>
+  
+	
+  
+  <div class="column side">
+    <img src="cat-dancing.GIF" alt="funny looking cat" width="80%">
+	<img src="cat-dancing.GIF" alt="funny looking cat" width="80%">
+    
+  </div>
+</div>
+
+<div class="footer">
+	<small>&copy; copyright 2023; Ddori's</small>
+</div>
+
+</body>
+</html>

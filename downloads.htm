@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Website </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	body{
+		margin:0;
+		padding:0;
+		background-image: url('star_background.jpg')
+	}
+	
+	nav {
+		position: static;
+		background: #ECDDD9;
+		overflow: auto;
+		margin: 7px;
+		border-style: dotted;
+		border-width: medium;
+	}
+	ul {
+		padding: 0;
+		margin: 0 0 0 150px;
+		list-style: none;
+	}
+	li{
+		float: left;
+	}
+	.logo img{
+		position: absolute;
+		margin-top: 2px;
+		margin-left: 10px;
+	}
+	.insta img{
+		float: right;
+	}
+	.youtube img{
+		float: right;
+	}
+	nav a{
+		width: 100px;
+		display: block;
+		padding: 35px 14px;
+		text-decoration: none;
+		font-size:15px;
+		font-family: monospace;
+		color: black;
+		text-allign: center;
+		transition: 0.5s;
+	}
+	nav a:hover:not(.active) {
+		background-color: #E3D7D3;
+		width: 150px;
+	}
+	.active {
+		background-color: #CE97AA; 		
+	}
+	.tab {
+		border-radius: 5px;
+		background-color: #ECDDD9;
+		padding: 20px;
+		margin-left: 400px;
+		margin-right: 400px;
+		margin-top: 30px;
+		font-family: Franklin Gothic Medium;
+		border-style: dashed dotted;
+	}
+	h1{
+		text-align:center;
+		font-size:30px;
+		border-style: solid dashed dotted double; 
+		padding:20px;
+	}
+	.footer {
+		padding: 20px;
+		text-align: center;
+		background: #CE97AA;
+		margin-top: 20px;
+		font-family: monospace;
+	}	
+	
+	@media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+	width: 100%;
+	}
+	
+</style>
+</head>
+
+<body>
+
+<div class="logo"><a href="index.htm"><img src="logo.png" alt="my logo" width="150" height="85"></a>
+</div>
+<div class="insta"><a href="https://www.instagram.com/" target= "_blank"><img src="insta-logo.png" alt="instagram" width="70" height="70"></a>
+</div>
+<div class="youtube"><a href="https://www.youtube.com/" target="_blank"><img src="utube-logo.png" alt="youtube-logo" width="70" height="70"></a>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="index.htm">Biography</a></li>
+		<li><a href="resume.htm">Resume</a></li>
+		<li><a href="timetable.htm">Timetable</a></li>
+		<li><a href="galleries.htm">Galleries</a></li>
+		<li><a class="active" href="downloads.htm">Download</a></li>
+		<li><a href="links.htm">links</a></li>
+		<li><a href="log.htm">LogIn</a></li>
+		<li style="float: right;"><a href="logout.htm">LogOut</a><li>
+		
+	</ul>
+</nav>
+<div class="tab">
+	<h1>Downloads</h1>
+	<p style="font-size: 23px;">My resume ---> <a href="fatinresume.pdf">Here</a></p>
+	<p style="font-size: 23px;">CS2512A Time Table ---><a href="timetable.pdf">Here</a></p>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+	<div class="footer">
+		<small>&copy; copyright 2023; Ddori's</small>
+	</div>
+
+</body>
+</html>
